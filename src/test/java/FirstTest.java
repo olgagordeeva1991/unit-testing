@@ -15,8 +15,8 @@ public class FirstTest {
     @Before
     public void setUp() {
         System.out.println("Start Browser");
+        System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriver");
         webDriver = new ChromeDriver();
-        System.setProperty("webdriver.chrome.driver", "/Users/admin/Downloads/chromedriver_win32/chromedriver.exe");
 
         System.out.println("Open website");
         webDriver.get("https://ithillel.ua/");
